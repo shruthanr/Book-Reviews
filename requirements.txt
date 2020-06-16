@@ -1,0 +1,17 @@
+certifi
+chardet
+Click
+Flask
+Flask-Session
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+SQLAlchemy
+urllib3
+Werkzeug
+
+# Heroku
+psycopg2==2.7.4
+gunicorn
