@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../static/style.css">
-    <link href="../static/sticky-footer.css" rel="stylesheet">
+   
  
 
 
@@ -24,7 +24,19 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Book Review Website</span>
+        <!-- <span class="navbar-brand mb-0 h1">Book Review Website</span> -->
+        <ul class="navbar-nav mr-auto"</ul>
+        <li class="nav-item dropdown">
+            <a class="navbar-brand mb-0 h1" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Book Review Website</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Shruthan R (181CO250)</a>
+                <a class="dropdown-item" href="#">Shreesha Bharadwaj (181CO249)</a>
+                
+            </div>
+        </li>
+    </ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,13 +70,7 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer class="footer">
-        <div class="container">
-            <!-- <span class="text-muted"> -->
-                <p align=center class="text-muted">By Shruthan R (181CO250) and Shreesha Bharadwaj (181CO249)</p>
-            <!-- </span> -->
-        </div>
-    </footer>
+
 
 
 
