@@ -225,7 +225,7 @@ def book(isbn):
 
         return redirect("/book/" + isbn)
 
-    # Take the book ISBN and redirect to his page (GET)
+    # Take the book ISBN and redirect to this page (GET)
     else:
 
         row = db.execute("SELECT isbn, title, author, year FROM books WHERE \
@@ -306,7 +306,7 @@ def api_call(isbn):
     result = dict(tmp.items())
 
     # Round Avg Score to 2 decimal. This returns a string which does not meet the requirement.
-    # https://floating-point-gui.de/languages/python/
+   
     result['average_score'] = float('%.2f'%(result['average_score']))
 
     return jsonify(result)
