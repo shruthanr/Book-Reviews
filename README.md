@@ -10,16 +10,16 @@ Shruthan R (181CO250)
 
 
 ## To run locally:
-# Create a virtualenv (Optional but reccomended)
+### Create a virtualenv (Optional but recommended)
 $ python3 -m venv bookReviewWebsite
 
-# Activate the virtualenv
+### Activate the virtualenv
 $ source bookReviewWebsite/bin/activate (Linux)
 
-# Install all dependencies
+### Install all dependencies
 $ pip install -r requirements.txt
 
-# ENV Variables (Use set instead of export if on Windows)
+### ENV Variables (Use set instead of export if on Windows)
 $ export FLASK_APP=application.py # flask run
 
 
